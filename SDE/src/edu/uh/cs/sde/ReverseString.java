@@ -12,7 +12,6 @@ public class ReverseString {
 
 		String input = new String();
 
-
 		while (true) {
 			System.out.print("Type some words: ");
 			input = scanner.nextLine();
