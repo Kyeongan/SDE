@@ -7,7 +7,7 @@ public class Node {
 	Node right;
 	
 	Node(){
-		System.out.println("Node Class - Let's enjoy");
+		System.out.println("Node Class! Let's enjoy");
 	}
 
 	public int getValue() {
