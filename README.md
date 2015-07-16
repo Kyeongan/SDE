@@ -1,5 +1,5 @@
 # SDE
 Software Development Engineer Interviews Questions
 
-### List Tree
+### Tree
 - SubBinaryTree.java : Find subtree is in tree.
