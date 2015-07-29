@@ -28,6 +28,12 @@ public class BinarySearchTree {
 		}
 	}
 	
+	public int treeHeight(TreeNode node) {
+		if (node == null)
+			return 0;
+		return Math.max(treeHeight(node.left), treeHeight(node.right)) + 1;
+	}
+
 	public int isSubTree(TreeNode root1, TreeNode root2) {
 
 		if (root1 == null)
