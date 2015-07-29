@@ -2,12 +2,17 @@ package edu.uh.cs.sde.bst;
 
 public class TreeNode {
 
-	public int value;
+	int value;
 	public TreeNode left;
 	public TreeNode right;
 
 	TreeNode(int x) {
 		value = x;
+	}
+
+	public void printValue() {
+		// TODO Auto-generated method stub
+		System.out.println("Value is " + this.value);
 	}
 
 }
