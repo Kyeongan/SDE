@@ -1,5 +1,7 @@
 package edu.uh.cs.sde.bst;
 
+import java.util.*;
+
 public class BinarySearchTree {
 
 	public BinarySearchTree() {
@@ -64,6 +66,51 @@ public class BinarySearchTree {
 			return false;
 		else
 			return isValidBST(node.left, min, node.value) && isValidBST(node.right, node.value, max);
+	}
+	
+	public TreeNode findLowestCommonAncestor(TreeNode root, int value1, int value2) {
+		while (root != null) {
+			int value = root.value;
+
+			if (value > value1 && value > value2) {
+				root = root.left;
+			} else if (value < value1 && value < value2) {
+				root = root.right;
+			} else {
+				return root;
+			}
+		}
+		return null;
+	}
+
+	public TreeNode findLowestCommonAncestor(TreeNode root, TreeNode child1, TreeNode child2) {
+		if(root==null || child1==null || child2== null)
+			return null;
+		
+		return findLowestCommonAncestor(root, child1.value, child2.value);
+	}
+	
+	public ArrayList<Integer> preorderTraversalStack(TreeNode root) {
+
+		ArrayList<Integer> returnList = new ArrayList<Integer>();
+		if (root == null)
+			return returnList;
+
+		Stack<TreeNode> stack = new Stack<TreeNode>();
+		stack.push(root);
+
+		while (!stack.empty()) {
+			TreeNode n = stack.pop();
+			returnList.add(n.value);
+
+			if (n.right != null) {
+				stack.push(n.right);
+			}
+			if (n.left != null) {
+				stack.push(n.left);
+			}
+		}
+		return returnList;
 	}
 
 	void preorderTraversal(TreeNode root) {
