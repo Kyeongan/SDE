@@ -48,6 +48,21 @@ public class BinarySearchTree {
 		else
 			return -1;
 	}
+	
+	public TreeNode Insert(TreeNode root, int value) {
+		if (root == null) {
+			TreeNode node = new TreeNode(value);
+			node.value = value;
+			node.left = null;
+			node.right = null;
+			root = node;
+		} else if (root.value > value)
+			root.left = Insert(root.left, value);
+		else if (root.value < value)
+			root.right = Insert(root.right, value);
+
+		return root;
+	}
 
 	public boolean equals(TreeNode root1, TreeNode root2) {
 		if (root1 == root2)
