@@ -7,4 +7,8 @@ public class Animal {
     public void testInstanceMethod() {
         System.out.println("The instance method in Animal");
     }
+
+	void walk() {
+		System.out.println("I am walking");
+	}
 }
