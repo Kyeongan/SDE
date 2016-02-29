@@ -14,7 +14,8 @@ public class FizzBuzz {
 			} else if (buzz) {
 				System.out.println("buzz");
 			} else {
-				System.out.println(i);
+				System.out.println
+				(i);
 			}
 
 		}
