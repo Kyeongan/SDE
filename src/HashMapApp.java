@@ -6,9 +6,10 @@ public class HashMapApp {
 	public static void main(String argc[]) {
 		HashMap<Integer, String> map = new HashMap<Integer, String>();
 		
-		map.put(0, "Zero");
+		
 		map.put(1, "One");
 		map.put(2, "Two");
+		map.put(0, "Zero");
 		map.put(3, "Three");
 		
 		System.out.println(map.get(1));

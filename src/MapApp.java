@@ -10,8 +10,13 @@ public class MapApp {
 		Map<Integer, String> linkedHashMap = new LinkedHashMap<Integer, String>();
 		Map<Integer, String> treeMap = new TreeMap<Integer, String>();
 		
+		// HashMap - no guarantee the order even if sometimes show it by ordering.
 		testMap(hashMap);
+		
+		// LinkedHashMap - order by input
 		testMap(linkedHashMap);
+		
+		// TreeMap - natural order by key
 		testMap(treeMap);
 		
 

@@ -26,9 +26,16 @@ public class ListApp {
 			list.add(i);
 		}
 		
+		for(int i=0; i<30 ; i++) {
+			System.out.println("Values : " + list.get(i));
+		}
 		
 		for(int i = 0; i<1E5 ; i++) {
 			list.add(0, i);
+		}
+		
+		for(int i=0; i<30 ; i++) {
+			System.out.println("Values : " + list.get(i));
 		}
 		
 		
