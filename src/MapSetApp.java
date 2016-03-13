@@ -12,10 +12,40 @@ class Person {
 		this.id = id;
 		this.name = name;
 	}
-	
-	public String toString() {
-		return id + ": " + name;
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + id;
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		return result;
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Person other = (Person) obj;
+		if (id != other.id)
+			return false;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		return true;
+	}
+
+	public String toString() {
+		return "Person [id=" + id + ", name=" + name + "]";
+	}
+
+	
 }
 
 public class MapSetApp {
@@ -27,17 +57,17 @@ public class MapSetApp {
 		Person p3 = new Person(2, "Mike");
 		Person p4 = new Person(1, "Sue");	// duplicated 
 		
-		Map <Integer, Person> map = new HashMap<Integer, Person>();
+		Map <Person, Integer> map = new HashMap<Person, Integer>();
 		
-		map.put(0, p1);
-		map.put(1, p2);
-		map.put(2, p3);
-		map.put(3, p4);
+		map.put(p1, 1);
+		map.put(p2, 2);
+		map.put(p3, 3);
+		map.put(p4, 1);
 
+//		System.out.println(p4.equals(p4));
 		
-		
-		for (Integer key : map.keySet()) {
-			System.out.println(key + ": " + map.get(key));
+		for (Person key : map.keySet()) {
+			System.out.println(key + " : " + map.get(key));
 		}
 		
 		// Set
