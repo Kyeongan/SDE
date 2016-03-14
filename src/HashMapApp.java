@@ -14,6 +14,7 @@ public class HashMapApp {
 		
 		System.out.println(map.get(1));
 		
+		
 		for(int i=0; i<map.size() ; i++) {
 			System.out.println(map.get(i));
 		}

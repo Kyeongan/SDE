@@ -31,7 +31,7 @@ public class ListApp {
 		}
 		
 		for(int i = 0; i<1E5 ; i++) {
-			list.add(0, i);
+			list.add(0,i);
 		}
 		
 		for(int i=0; i<30 ; i++) {
