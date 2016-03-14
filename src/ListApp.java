@@ -22,19 +22,19 @@ public class ListApp {
 		long startTime = System.currentTimeMillis();
 		
 		// Populate
-		for(int i = 0; i<1E5 ; i++) {
+		for(int i = 0; i<1E4 ; i++) {
 			list.add(i);
 		}
 		
-		for(int i=0; i<30 ; i++) {
+		for(int i=0; i<5 ; i++) {
 			System.out.println("Values : " + list.get(i));
 		}
 		
-		for(int i = 0; i<1E5 ; i++) {
-			list.add(0,i);
+		for(int i = 0; i<1E4 ; i++) {
+			list.add(0, i);
 		}
 		
-		for(int i=0; i<30 ; i++) {
+		for(int i=0; i<5 ; i++) {
 			System.out.println("Values : " + list.get(i));
 		}
 		
