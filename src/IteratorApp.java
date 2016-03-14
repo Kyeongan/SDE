@@ -15,6 +15,12 @@ public class IteratorApp {
 		animals.add("Dog");
 		animals.add("Fox");
 		
+		Iterator<String> it1 = animals.iterator();
+		while(it1.hasNext()) {
+			String val = it1.next();
+			System.out.println(val);
+		}
+		System.out.println();
 		
 		ListIterator<String> it = animals.listIterator();
 		while(it.hasNext()) {
