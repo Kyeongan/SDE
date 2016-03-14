@@ -56,7 +56,7 @@ class Person {
 	
 }
 
-public class MapSetApp {
+public class SetApp2 {
 
 	public static void main(String[] args) {
 		
