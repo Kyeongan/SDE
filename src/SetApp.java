@@ -43,7 +43,11 @@ public class SetApp {
 		set2.add("Bob");
 		set2.add("Clare");
 		set2.add("David");
+		set2.add("Karl");
 		
+		System.out.println(set2);
+		
+		set2.retainAll(set);
 		System.out.println(set2);
 		
 

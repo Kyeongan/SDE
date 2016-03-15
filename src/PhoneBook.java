@@ -1,7 +1,6 @@
-
-//Complete this code or write your own from scratch
-import java.util.*;
-import java.io.*;
+import java.util.HashMap;
+import java.util.Scanner;
+// PhoneBook with HashMap
 
 public class PhoneBook {
 	public static void main(String[] argh) {
