@@ -29,6 +29,7 @@ public class AnimalApp {
 		System.out.println("Animal says " + animals[0].getSound());
 		System.out.println("Animal says " + animals[1].getSound());
 		
+		//Cannot make a static reference to the non-static method speakAnimal(Animal) from the type AnimalApp
 		speakAnimal(doggy);
 
 	}
