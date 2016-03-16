@@ -3,7 +3,7 @@ package edu.uh.cs.DesignPattern;
 public class AnimalApp {
 
 	public static void main(String[] args) {
-
+		
 		Dog fido = new Dog();
 		fido.setName("Fido");
 		System.out.println(fido.getName());
@@ -30,6 +30,7 @@ public class AnimalApp {
 
 		// Cannot make a static reference to the non-static method
 		// speakAnimal(Animal) from the type AnimalApp
+		//Cannot make a static reference to the non-static method speakAnimal(Animal) from the type AnimalApp
 		speakAnimal(doggy);
 
 		Animal sparky = new Dog();
