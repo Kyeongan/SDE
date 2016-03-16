@@ -4,6 +4,8 @@ public class Animal {
 	private String name = "Animal";
 	private int height = 10;
 	private String sound = "";
+	
+	public String flyingType;
 
 	public void setName(String newName) {
 		this.name = newName;
@@ -30,5 +32,13 @@ public class Animal {
 
 	public String getSound() {
 		return this.sound;
+	}
+	
+	public String tryToFly() {
+		return flyingType;
+	}
+	
+	public void setFlyingAbility(String type) {
+		flyingType = type;
 	}
 }
