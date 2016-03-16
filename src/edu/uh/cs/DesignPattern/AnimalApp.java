@@ -12,7 +12,28 @@ public class AnimalApp {
 		
 		fido.setHeight(20);
 		System.out.println(fido.getHeight());
+		
+		Animal doggy = new Dog();
+		Animal kitty = new Cat();
+		
+		System.out.println("Dog says " + doggy.getSound());
+		System.out.println("Cat says " + kitty.getSound());
+		
+		
+		((Dog)doggy).digHole();
+		
+		Animal[] animals = new Animal[4];
+		animals[0] = doggy;
+		animals[1] = kitty;
+		
+		System.out.println("Animal says " + animals[0].getSound());
+		System.out.println("Animal says " + animals[1].getSound());
+		
+		speakAnimal(doggy);
 
 	}
 
+	public static void speakAnimal(Animal rand) {
+		System.out.println(rand.getSound());
+	}
 }

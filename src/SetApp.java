@@ -49,7 +49,6 @@ public class SetApp {
 		
 		set2.retainAll(set);
 		System.out.println(set2);
-		
 
 	}
 
