@@ -10,5 +10,7 @@ public class Dog extends Animal {
 		super();
 
 		setSound("Bark");
+		
+		flyingType = "Can't fly";
 	}
 }

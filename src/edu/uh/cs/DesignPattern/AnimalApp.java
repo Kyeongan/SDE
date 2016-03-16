@@ -31,6 +31,11 @@ public class AnimalApp {
 		
 		//Cannot make a static reference to the non-static method speakAnimal(Animal) from the type AnimalApp
 		speakAnimal(doggy);
+		
+		Animal sparky = new Dog();
+		Animal twitty = new Bird();
+		System.out.println("Dog " + sparky.tryToFly());
+		System.out.println("Bird " + twitty.tryToFly());
 
 	}
 
