@@ -2,22 +2,28 @@
 public class FizzBuzz {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		for (int i = 1; i <= 100; i++) {
-			boolean fizz = (i % 3) == 0;
-			boolean buzz = (i % 5) == 0;
+		
+		printFizzBuzz(100);
+	}
+	
+	public static void printFizzBuzz(int number) {
+		if (number == 0)
+			System.out.println("Number is zero, There are no outputs");
+		else {
+			for (int i = 1; i < number; i++) {
+				boolean fizz = (i % 3) == 0;
+				boolean buzz = (i % 5) == 0;
 
-			if (fizz && buzz) {
-				System.out.println("fizzbuzz");
-			} else if (fizz) {
-				System.out.println("fizz");
-			} else if (buzz) {
-				System.out.println("buzz");
-			} else {
-				System.out.println
-				(i);
+				if (fizz && buzz) {
+					System.out.println("fizzbuzz ");
+				} else if (fizz) {
+					System.out.print("fizz ");
+				} else if (buzz) {
+					System.out.print("buzz ");
+				} else {
+					System.out.print(i + " ");
+				}
 			}
-
 		}
 	}
 }
