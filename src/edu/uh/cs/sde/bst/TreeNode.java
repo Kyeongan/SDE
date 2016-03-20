@@ -11,7 +11,6 @@ public class TreeNode {
 	}
 
 	public void printValue() {
-		// TODO Auto-generated method stub
 		System.out.println("Value is " + this.value);
 	}
 

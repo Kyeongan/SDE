@@ -3,9 +3,9 @@ package edu.uh.cs.sde.bst;
 import java.util.*;
 
 public class BinarySearchTree {
-
+	
 	public BinarySearchTree() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public int minDepth(TreeNode root) {
@@ -43,7 +43,7 @@ public class BinarySearchTree {
 		if (root2 == null)
 			return 1;
 
-		if (equals(root1, root2) || equals(root1.left, root2) || equals(root1.right, root2))
+		if (isSameTree(root1, root2) || isSameTree(root1.left, root2) || isSameTree(root1.right, root2))
 			return 1;
 		else
 			return -1;
@@ -64,14 +64,14 @@ public class BinarySearchTree {
 		return root;
 	}
 
-	public boolean equals(TreeNode root1, TreeNode root2) {
+	public boolean isSameTree(TreeNode root1, TreeNode root2) {
 		if (root1 == root2)
 			return true;
 		if (root1 == null || root2 == null)
 			return false;
 		if (root1.value != root2.value)
 			return false;
-		return equals(root1.left, root2.left) && equals(root1.right, root2.right);
+		return isSameTree(root1.left, root2.left) && isSameTree(root1.right, root2.right);
 	}
 
 	public boolean isValidBST(TreeNode node, int min, int max) {
@@ -150,5 +150,21 @@ public class BinarySearchTree {
 		postorderTraversal(root.left);
 		postorderTraversal(root.right);
 		root.printValue();
+	}
+	
+	void topView(TreeNode root) {
+	
+	}
+	
+	void levelOrder(TreeNode root) {
+		if (root == null )
+			return;
+		root.printValue();
+		
+		levelOrder(root.left);
+		levelOrder(root.right);
+		root.right.printValue();
+		root.left.left.printValue();
+		root.right.right.printValue();
 	}
 }
