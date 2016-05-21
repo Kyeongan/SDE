@@ -4,6 +4,7 @@ import java.util.Map.Entry;
 public class HashMapApp {
 
 	public static void main(String argc[]) {
+		
 		HashMap<Integer, String> map = new HashMap<Integer, String>();
 		
 		
