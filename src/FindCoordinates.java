@@ -1,36 +1,47 @@
-// Imagine we have an image where every pixel is white or black.  We’ll represent this image as a simple 2D array (0 = black, 1 = white).  The image you get is known to have a single black rectangle on a white background.  Your goal is to find this rectangle and return its coordinates.
+// Imagine we have an image where every pixel is white or black. We’ll represent
+// this image as a simple 2D array (0 = black, 1 = white). The image you get is
+// known to have a single black rectangle on a white background. Your goal is to
+// find this rectangle and return its coordinates.
 
-// Here’s a sample “image” using JavaScript (feel free to rewrite in your language of choice):
-
-// var image = [
-//   [1, 1, 1, 1, 1, 1, 1],
-//   [1, 1, 1, 1, 1, 1, 1],
-//   [1, 1, 1, 0, 0, 0, 1],
-//   [1, 1, 1, 0, 0, 0, 1],
-//   [1, 1, 1, 1, 1, 1, 1]
-// ];
+// Here’s a sample “image” using JavaScript (feel free to rewrite in your
+// language of choice):
 
 import java.io.*;
 import java.util.*;
 
 /*
- * To execute Java, please define "static void main" on a class
- * named Solution.
- *
- * If you need more classes, simply define them inline.
+ * To execute Java, please define "static void main" on a class named Solution. If you need more classes, simply define
+ * them inline.
  */
 
 class FindCoordinates {
 
 	public static void main(String[] args) {
-		int[][] image = new int[][]{
-		      { 1, 1, 1, 1, 1, 1, 1 },
-		      { 1, 1, 1, 1, 1, 1, 1 },
-		      { 1, 1, 1, 0, 0, 0, 1 },
-		      { 1, 1, 1, 0, 0, 0, 1 },
-		      { 1, 1, 1, 1, 1, 1, 1 }
-		    };
+
+		int[][] image = new int[][] {
+				{ 1, 1, 1, 1, 1, 1, 1 },
+				{ 1, 1, 1, 1, 1, 1, 1 },
+				{ 1, 1, 1, 0, 0, 0, 1 },
+				{ 1, 1, 1, 0, 0, 0, 1 },
+				{ 1, 1, 1, 1, 1, 1, 1 } };
+
+		int[][] image2 = new int[][] {
+				{ 1, 1, 1, 1, 1, 1, 1 },
+				{ 1, 1, 1, 1, 1, 1, 1 },
+				{ 1, 1, 1, 1, 1, 1, 1 },
+				{ 1, 0, 0, 0, 0, 0, 1 },
+				{ 1, 1, 1, 1, 1, 1, 1 } };
+
+		int[][] image3 = new int[][] {
+				{ 1, 1, 1, 1, 1, 1, 1 },
+				{ 1, 1, 1, 1, 1, 1, 1 },
+				{ 1, 1, 1, 1, 1, 1, 1 },
+				{ 1, 1, 1, 1, 1, 0, 0 },
+				{ 1, 1, 1, 1, 1, 0, 0 } };
+
 		coordiate(image);
+		coordiate(image2);
+		coordiate(image3);
 	}
 
 	// time complexity: O(n^2), where n is the length
@@ -54,19 +65,11 @@ class FindCoordinates {
 					x2 = j;
 					y2 = i;
 				}
-				// if(image[i][j] != 0)
-
-				// if(firstBlack = true && image[i][j] == 1) {
-				// x2 = i--;
-				// }
-
 			}
-
 		}
 
-		System.out.println("x1:" + x1 + " y1:" + y1 + ", x2:" + x2 + " y2:" + y2);
+		System.out.println("(" + x1 + ", " + y1 + ") (" + x2 + ", " + y2 + ")");
 
-		// (3,2), (5, 3)
 	}
 }
 
