@@ -1,4 +1,6 @@
 # Python best practice from Udacity
 
-1. drawing.py
+- drawing.py
 - drawing circle using turtle library
+
+<img src="https://github.com/Kyeongan/SDE/blob/master/python-udacity/outputs/drawing1.png"/>
