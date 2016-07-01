@@ -3,4 +3,5 @@
 - drawing.py
 - drawing circle using turtle library
 
-<img src="https://github.com/Kyeongan/SDE/blob/master/python-udacity/outputs/drawing1.png"/>
+<img src="https://github.com/Kyeongan/SDE/blob/master/python-udacity/outputs/drawing1.png" width="300px"/>
+<img src="https://github.com/Kyeongan/SDE/blob/master/python-udacity/outputs/drawing2.png" width="300px"/>
