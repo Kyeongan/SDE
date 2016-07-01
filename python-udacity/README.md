@@ -1,4 +1,4 @@
-# Python best practice from Udacity
+# Python codes from Programming Foundations with Python at Udacity
 
 ## drawing.py
 - Drawing circle using turtle library
