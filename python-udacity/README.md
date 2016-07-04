@@ -5,6 +5,7 @@
 - create new class `Movie`
 - create entertainment_center.py to instantiate the movies
 - create the html file using `fresh_tomatoes.py`
+
 <img src="https://github.com/Kyeongan/SDE/blob/master/python-udacity/outputs/movie1.png" width="300px"/>
 
 ## profanity.py
