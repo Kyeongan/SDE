@@ -4,6 +4,7 @@
 ## profanity.py
 - read a text file
 - check a text for curse words
+to check if it is cursed words using http://www.wdylike.appspot.com/?q=shit
 
 ## drawing.py
 - Drawing circle using turtle library
