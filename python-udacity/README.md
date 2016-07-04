@@ -1,19 +1,19 @@
-# Python codes
-## Programming Foundations with Python at Udacity
+## Python codes
+### Programming Foundations with Python at Udacity
 
-## movie class - media.py / entertainment_center.py
+### media.py / entertainment_center.py
 - create new class `Movie`
 - create entertainment_center.py to instantiate the movies
 - create the html file using `fresh_tomatoes.py`
 
 <img src="https://github.com/Kyeongan/SDE/blob/master/python-udacity/outputs/movie1.png" width="300px"/>
 
-## profanity.py
+### profanity.py
 - read a text file
 - check a text for curse words
 - to check if it is cursed words using http://www.wdylike.appspot.com/?q=shit
 
-## drawing.py
+### drawing.py
 - Drawing circle using turtle library
 - Making a circle out of square
 
