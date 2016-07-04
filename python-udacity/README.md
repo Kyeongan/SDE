@@ -1,7 +1,11 @@
 # Python codes
 ## Programming Foundations with Python at Udacity
 
-## movie
+## movie class - media.py / entertainment_center.py
+- create new class `Movie`
+- create entertainment_center.py to instantiate the movies
+- create the html file using `fresh_tomatoes.py`
+<img src="https://github.com/Kyeongan/SDE/blob/master/python-udacity/outputs/movie1.png" width="300px"/>
 
 ## profanity.py
 - read a text file
