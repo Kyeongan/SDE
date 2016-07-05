@@ -9,7 +9,7 @@ movies.append(media.Movie("Terminator 2",
 
 movies.append(media.Movie("The Matrix",
     "1999",
-    "http://ia.media-imdb.com/images/M/MV5BMTkxNDYxOTA4M15BMl5BanBnXkFtZTgwNTk0NzQxMTE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "http://t0.gstatic.com/images?q=tbn:ANd9GcQq3pIz-aKgkmYX1dJ-EL-AlHSPcOO7wdqRIJ5gJy9qNinXpmle",
     "https://www.youtube.com/watch?v=oZ1-M8O70zk"))
 
 movies.append(media.Movie("Inception",
