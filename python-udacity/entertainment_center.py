@@ -27,6 +27,17 @@ movies.append(media.Movie("Shutter Island",
     "http://www.gstatic.com/tv/thumb/movieposters/3531967/p3531967_p_v8_ah.jpg",
     "https://www.youtube.com/watch?v=5iaYLCiq5RM"))
 
+movies.append(media.Movie("Silicon Valley",
+    "2014",
+    "http://cdn.collider.com/wp-content/uploads/2016/03/silicon-valley-season-3-poster.jpg",
+    "https://www.youtube.com/watch?v=69V__a49xtw"))
+
+movies.append(media.Movie("The Martian",
+    "2015",
+    "http://t2.gstatic.com/images?q=tbn:ANd9GcTkKPZ7EIOafEsemyn6zTIDeGYthKC_Okgxi1eX6diuOT3xKWXQ",
+    "https://www.youtube.com/watch?v=ej3ioOneTy8"))
+
+
 
 fresh_tomatoes.open_movies_page(movies)
 # print(media.Movie.VALID_RATINGS)
