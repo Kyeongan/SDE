@@ -27,10 +27,10 @@ movies.append(media.Movie("Shutter Island",
     "http://www.gstatic.com/tv/thumb/movieposters/3531967/p3531967_p_v8_ah.jpg",
     "https://www.youtube.com/watch?v=5iaYLCiq5RM"))
 
-movies.append(media.Movie("Silicon Valley",
-    "2014",
-    "http://cdn.collider.com/wp-content/uploads/2016/03/silicon-valley-season-3-poster.jpg",
-    "https://www.youtube.com/watch?v=69V__a49xtw"))
+movies.append(media.Movie("Terminator 2",
+    "1991",
+    "http://t1.gstatic.com/images?q=tbn:ANd9GcS5J6Ay6y1UT7WAI4U7Zm2KDYITrvfOI3vmaCNdGhx_0jmWiI1d",
+    "https://www.youtube.com/watch?v=eajuMYNYtuY"))
 
 movies.append(media.Movie("The Martian",
     "2015",
@@ -38,6 +38,7 @@ movies.append(media.Movie("The Martian",
     "https://www.youtube.com/watch?v=ej3ioOneTy8"))
 
 
+movies_sorted = sorted(movies, key=lambda movies: movies.year, reverse=True)
 
-fresh_tomatoes.open_movies_page(movies)
+fresh_tomatoes.open_movies_page(movies_sorted)
 # print(media.Movie.VALID_RATINGS)
