@@ -1,5 +1,5 @@
 ## Python codes
-### Programming Foundations with Python at Udacity
+### Programming Foundations with Python at Udacity.
 
 ### media.py / entertainment_center.py
 - create new class `Movie`
