@@ -54,7 +54,7 @@ class FindCoordinates {
 		boolean firstBlack = false;
 
 		for (int i = 0; i < image.length; i++) { // row
-			for (int j = 0; j < image[i].length; j++) { // col
+			for (int j = 0; j < image[i].length; j++) { // column
 
 				if (image[i][j] == 0) { // first 0
 					if (firstBlack == false) {
@@ -73,8 +73,3 @@ class FindCoordinates {
 	}
 }
 
-/*
- * Your previous Markdown content is preserved below:
- * 
- * Welcome to the Interview!
- */
