@@ -6,7 +6,7 @@ function hello() {
 	console.log(me);
 }
 
-hello()
+hello();
 
 
 function init() {
