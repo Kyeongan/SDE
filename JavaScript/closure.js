@@ -3,4 +3,4 @@ function hello() {
 	console.log(me);
 }
 
-hello()
+hello();
