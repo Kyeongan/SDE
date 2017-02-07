@@ -1,13 +1,10 @@
 # SDE
 Software Development Engineer Interviews Questions.
 
-## JAVA
+### JAVA
 
-### Tree
-- SubBinaryTree.java : Find subtree is in tree.
-
-## JAVASCRIPT
+### JAVASCRIPT
 - APPLE, DROPBOX, etc.
 
-## Python
+### Python
 https://github.com/Kyeongan/SDE/tree/master/python-udacity
