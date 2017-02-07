@@ -67,3 +67,67 @@ FROM
 ) PM
 WHERE AM.country = PM.country
 
+
+
+
+
+
+
+
+
+
+
+
+
+# input
+# date1 = c('2004Jan2','2012Nov24','2014September13','07August1','98Apr3')
+
+# desired output format 'yyyy-mm-dd'
+# "2004-01-02" "2012-11-24" "2014-09-13" "2007-08-01" "1998-04-03" 
+
+var yyyy;
+var mm;
+var dd;
+
+for( int i=0 ; i<date1.length  i++ ) {
+  
+  // yyyy -> 2 or 4 
+  if( left(date1[i],4) < 9999 || )
+  {
+    yyyy = left(date1[i],4);
+    mm_index = 4;
+  }
+  eles
+  {
+    yyyy = left(date1[i],2);
+    mm_index = 
+  }
+  
+  // month
+  if(  )
+  {
+    switch()
+    {
+     case left(mm,mm_index,  3) == 'Jan' : mm = 1;
+     case left(mm,mm_index, 3) == 'Jan' : mm = 1;
+    }
+  }
+  
+  
+  //
+  if( left(date1[i],-2) < 9999 || )
+  {
+    dd = left(date1[i],-2);
+  }
+  eles
+  {
+    dd = left(date1[i],-1);
+  }
+  
+  
+  
+  output[i] = yyyy 
+
+}
+
+
