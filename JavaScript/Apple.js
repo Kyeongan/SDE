@@ -79,55 +79,65 @@ WHERE AM.country = PM.country
 
 
 
-# input
-# date1 = c('2004Jan2','2012Nov24','2014September13','07August1','98Apr3')
 
-# desired output format 'yyyy-mm-dd'
-# "2004-01-02" "2012-11-24" "2014-09-13" "2007-08-01" "1998-04-03" 
 
+
+// # input
+// # date1 = c('2004Jan2','2012Nov24','2014September13','07August1','98Apr3')
+
+// # desired output format 'yyyy-mm-dd'
+// # "2004-01-02" "2012-11-24" "2014-09-13" "2007-08-01" "1998-04-03" 
+
+
+var date = ['2004Jan2','2012Nov24','2014September13','07August1','98Apr3'];
 var yyyy;
 var mm;
 var dd;
+var output = [];
 
-for( int i=0 ; i<date1.length  i++ ) {
+for( var i=0 ; i<date.length ; i++ ) {
   
-  // yyyy -> 2 or 4 
-  if( left(date1[i],4) < 9999 || )
+  if( date[i].substring(0,4) < 9999 || date[i].substring(0,4) > 0 )
   {
-    yyyy = left(date1[i],4);
+    yyyy = date[i].substring(0,4);
     mm_index = 4;
   }
-  eles
+  else
   {
-    yyyy = left(date1[i],2);
-    mm_index = 
+    yyyy = '19' + date[i].substring(0,2);
+    mm_index = 2;
   }
-  
-  // month
-  if(  )
-  {
-    switch()
-    {
-     case left(mm,mm_index,  3) == 'Jan' : mm = 1;
-     case left(mm,mm_index, 3) == 'Jan' : mm = 1;
-    }
-  }
-  
-  
-  //
-  if( left(date1[i],-2) < 9999 || )
-  {
-    dd = left(date1[i],-2);
-  }
-  eles
-  {
-    dd = left(date1[i],-1);
-  }
-  
-  
-  
-  output[i] = yyyy 
 
+  
+  // console.log(date[i].substring(mm_index, mm_index+3) );
+  // month
+  switch(date[i].substring(mm_index, mm_index+3))
+  {
+   case 'Jan' :mm = 1;
+   case 'Feb' :mm = 2;
+   case 'Mar' :mm = 3;
+   case 'Apr' :mm = 4;
+   case 'May' :mm = 5;
+   case 'Jun' :mm = 6;
+   case 'Jul' :mm = 7;
+   case 'Aug' :mm = 8;
+   case 'Sep' :mm = 9;
+   case 'Oct' :mm = 10;
+   case 'Nov' :mm = 11;
+   case 'Dec' :mm = 12;
+  }
+  
+  // console.log(date[i].substring(date[i].length - 2));
+  
+  if( date[i].substring(date[i].length - 2) < 9999
+        || date[i].substring(date[i].length - 2) > 0 )
+    dd = date[i].substring(date[i].length - 2);
+  else
+    dd = '0' + date[i].substring(date[i].length - 1);
+  
+  output[i] = yyyy + '-' + mm + '-' + dd;
 }
+
+console.log(output);
 
 
